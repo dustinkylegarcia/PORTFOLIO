@@ -16,7 +16,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium">
           <li>
-            <a href="#hero" className="hover:text-blue-400 transition-colors">
+            <a href="#home" className="hover:text-blue-400 transition-colors">
               Home
             </a>
           </li>
@@ -45,7 +45,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-gray-800 px-6 py-4 space-y-4 text-lg font-medium">
           <a
-            href="#hero"
+            href="#home"
             className="block hover:text-blue-400 transition-colors"
             onClick={() => setOpen(false)}
           >
