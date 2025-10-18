@@ -6,22 +6,28 @@ export default function Projects() {
   }, []);
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "My GitHub Portfolio",
       description:
-        "A personal portfolio built with React, Tailwind, and Vite to showcase my skills and projects.",
-      link: "#",
+        "My GitHub page. This page will be the home page where your future works will be added.",
+      link: "https://dustinkylegarcia.github.io/",
     },
     {
-      title: "Task Manager",
+      title: "Valorant Cards API",
       description:
-        "A full-stack MERN app to create, update, and manage daily tasks with authentication.",
-      link: "#",
+        "A HTML website that utilizes a free public API with JSON return. It can be about anything. It can have one or more pages.",
+      link: "https://dustinkylegarcia.github.io/API/",
     },
     {
-      title: "E-commerce Store",
+      title: "Embed Video Page",
       description:
-        "A demo online shop built with MongoDB, Express, React, and Node.js.",
-      link: "#",
+        "A new page with a video feature by embedding using the YouTube embed API. Populate the page with relevant information. You can add as many videos as you want. You may apply other media as well.",
+      link: "https://dustinkylegarcia.github.io/MIDTERM/",
+    },
+    {
+      title: "Japan Famous Places",
+      description:
+        "A HTML website about a place in the world you would like to showcase.",
+      link: "https://dustinkylegarcia.github.io/Japan/",
     },
   ];
 
