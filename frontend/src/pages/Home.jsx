@@ -12,7 +12,7 @@ export default function Home() {
         Hi, I'm{" "}
         <span className="text-blue-500">
           <Typewriter
-            words={["Dustin", "a Developer", "a MERN Enthusiast"]}
+            words={["Dustin", "a Developer", "a Back-End Developer"]}
             loop={true}
             cursor
             cursorStyle="|"
@@ -24,7 +24,7 @@ export default function Home() {
       </h1>
 
       <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl">
-        I create modern web applications using the MERN stack.
+        I create modern web applications using the Techstack I know.
       </p>
 
       <a
