@@ -5,18 +5,24 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const links = ["Home", "About", "Projects", "Contact"];
+
   return (
     <nav className="w-full bg-navy-900 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
 
-        {/* LOGO — blue accent inside primary */}
-        <h1 className="text-2xl font-bold tracking-wide text-blue-400">
-          &lt;/&gt; TIN
-        </h1>
+        {/* LOGO */}
+        <Link to="/" className="flex items-center">
+          <img
+            src="/Tin.svg"
+            alt="TIN logo"
+            className="h-20 md:h-22 hover:drop-shadow-[0_0_12px_#38BDF8] transition"
+          />
+        </Link>
 
-        {/* DESKTOP LINKS — neutral emphasis */}
+        {/* DESKTOP LINKS */}
         <ul className="hidden md:flex space-x-8 text-sm font-medium">
-          {["Home", "About", "Projects", "Contact"].map((item) => (
+          {links.map((item) => (
             <li key={item}>
               <Link
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -32,15 +38,16 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-slate-200 hover:text-blue-400 transition"
+          aria-label="Toggle menu"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* MOBILE MENU — still primary blue */}
+      {/* MOBILE MENU */}
       {open && (
         <div className="absolute top-16 left-0 w-full bg-navy-800 px-6 py-4 space-y-4 text-sm font-medium md:hidden">
-          {["Home", "About", "Projects", "Contact"].map((item) => (
+          {links.map((item) => (
             <Link
               key={item}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}

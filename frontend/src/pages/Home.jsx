@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "</> TIN | Home";
+    document.title = "</>TIN | Home";
   }, []);
 
   return (

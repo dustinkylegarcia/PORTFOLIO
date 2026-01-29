@@ -5,7 +5,9 @@
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  overflow: hidden; /* 🚫 no scrollbars */
+  overflow-x: hidden; /* prevent sideways scroll */
+  overflow-y: auto;   /* ALLOW vertical scroll */
 }
+
