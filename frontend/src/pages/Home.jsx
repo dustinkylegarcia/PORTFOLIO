@@ -64,7 +64,7 @@ export default function Home() {
         {/* CTA BUTTONS */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/src/resume/Garcia_Resume.pdf"
+            href="/Garcia_CV.pdf"
             download
             className="inline-flex items-center justify-center
                        bg-amber-500 text-white px-6 py-3 rounded-lg

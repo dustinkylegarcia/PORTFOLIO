@@ -28,7 +28,7 @@ export default function About() {
           {/* IMAGE */}
           <div className="flex justify-center">
             <img
-              src="/src/image/profile.jpg"
+              src="/profile.jpg"
               alt="Dustin Kyle Garcia"
               className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64
                          object-cover rounded-xl shadow-lg"
