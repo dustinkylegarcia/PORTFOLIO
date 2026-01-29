@@ -9,9 +9,11 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-navy-50">
+      <div className="h-screen flex flex-col bg-slate-100 overflow-hidden">
         <Navbar />
-        <main className="flex-grow container mx-auto px-6 py-10">
+
+        {/* GLOBAL SCROLL CONTROL */}
+        <main className="flex-1 overflow-y-auto overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -19,6 +21,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
     </Router>

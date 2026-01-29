@@ -1,7 +1,11 @@
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-navy-900 text-white text-center p-4">
-      <p>&copy; {new Date().getFullYear()} DKMG. All rights reserved.</p>
+    <footer className="bg-navy-900 text-slate-300 h-12 flex items-center justify-center">
+      <p className="text-xs sm:text-sm">
+        © {currentYear} DKMG. All rights reserved.
+      </p>
     </footer>
   );
 }

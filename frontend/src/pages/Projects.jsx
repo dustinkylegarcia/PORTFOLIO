@@ -4,50 +4,68 @@ export default function Projects() {
   useEffect(() => {
     document.title = "</>TIN | Projects";
   }, []);
+
   const projects = [
     {
       title: "My GitHub Portfolio",
-      description:
-        "My GitHub page. This page will be the home page where your future works will be added.",
+      description: "A collection of my projects and experiments.",
       link: "https://dustinkylegarcia.github.io/",
     },
     {
       title: "Valorant Cards API",
-      description:
-        "A HTML website that utilizes a free public API with JSON return. It can be about anything. It can have one or more pages.",
+      description: "A web app consuming a public API with JSON responses.",
       link: "https://dustinkylegarcia.github.io/API/",
     },
     {
       title: "Embed Video Page",
-      description:
-        "A new page with a video feature by embedding using the YouTube embed API. Populate the page with relevant information. You can add as many videos as you want. You may apply other media as well.",
+      description: "A page using YouTube embed API with structured content.",
       link: "https://dustinkylegarcia.github.io/MIDTERM/",
     },
     {
       title: "Japan Famous Places",
-      description:
-        "A HTML website about a place in the world you would like to showcase.",
+      description: "A static website showcasing popular destinations in Japan.",
       link: "https://dustinkylegarcia.github.io/Japan/",
     },
   ];
 
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold text-blue-500">My Projects</h1>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {projects.map((project, idx) => (
-          <div key={idx} className="p-6 bg-white shadow rounded-lg hover:shadow-lg transition">
-            <h2 className="text-xl font-semibold">{project.title}</h2>
-            <p className="text-gray-600 mt-2">{project.description}</p>
-            <a
-              href={project.link}
-              className="mt-4 inline-block text-blue-500 hover:underline"
+    <section className="flex-1 w-full bg-slate-100 flex items-start justify-center">
+      <div className="w-full max-w-6xl px-4 sm:px-6 py-6 sm:py-10">
+
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 text-center">
+          Projects
+        </h1>
+
+        <div className="mt-6 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {projects.map((project, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-lg p-5 sm:p-6 shadow
+                         transition-all duration-300
+                         hover:shadow-lg hover:-translate-y-1"
             >
-              View Project →
-            </a>
-          </div>
-        ))}
+              <h2 className="text-base sm:text-lg font-semibold text-blue-600">
+                {project.title}
+              </h2>
+
+              <p className="mt-2 text-xs sm:text-sm text-slate-600">
+                {project.description}
+              </p>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-sm font-medium text-blue-600
+                           hover:underline"
+              >
+                View Project →
+              </a>
+            </div>
+          ))}
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
